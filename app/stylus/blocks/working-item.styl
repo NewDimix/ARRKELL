@@ -1,0 +1,160 @@
+.working-item
+    text-align center
+
+    &:first-child
+        .working-item__dot
+            background-color #199242
+
+            &:after
+                background linear-gradient(to bottom, #199242 0%, #ff631c 100%)
+
+                @media (min-width 992px)
+                    background linear-gradient(to right, #199242 0%, #ff631c 100%)
+
+        .working-item__icon
+            background-image inline('working-icon1.png')
+
+    &:nth-child(2)
+        .working-item__dot
+            background-color #ff631c
+
+            &:after
+                background linear-gradient(to bottom, #ff631c 0%, #ffc83d 100%)
+
+                @media (min-width 992px)
+                    background linear-gradient(to right, #ff631c 0%, #ffc83d 100%)
+
+        .working-item__icon
+            background-image inline('working-icon2.png')
+
+    &:nth-child(3)
+        .working-item__dot
+            background-color #ffc83d
+
+            &:after
+                background linear-gradient(to bottom, #ffc83d 0%, #bed63d 100%)
+
+                @media (min-width 992px)
+                    background linear-gradient(to right, #ffc83d 0%, #bed63d 100%)
+
+        .working-item__icon
+            background-image inline('working-icon3.png')
+
+    &:nth-child(4)
+        .working-item__dot
+            background-color #bed63d
+
+            &:after
+                background linear-gradient(to bottom, #bed63d 0%, #47ad54 100%)
+
+                @media (min-width 992px)
+                    background linear-gradient(to right, #bed63d 0%, #47ad54 100%)
+
+        .working-item__icon
+            background-image inline('working-icon4.png')
+
+    &:nth-child(5)
+        .working-item__dot
+            background-color #47ad54
+
+            &:after
+                background linear-gradient(to bottom, #47ad54 0%, #099a8d 100%)
+
+                @media (min-width 992px)
+                    background linear-gradient(to right, #47ad54 0%, #099a8d 100%)
+
+        .working-item__icon
+            background-image inline('working-icon5.png')
+
+    &:nth-child(6)
+        .working-item__dot
+            background-color #099a8d
+
+        .working-item__icon
+            background-image inline('working-icon6.png')
+
+            &:after
+                display none
+
+    &__title
+        {ibm}
+        width 130px
+        text-align right
+        padding-right 25px
+
+        @media (min-width 460px)
+            width 200px
+
+        @media (min-width 992px)
+            text-align center
+            padding-right 0
+            display block
+            height 50px
+            margin-bottom 20px
+            width auto
+
+        h3
+            text-transform uppercase
+            font-size 16px
+            margin-top 0
+            margin-bottom 0
+            font-weight 400
+
+    &__dot
+        {ibm}
+        width 17px
+        height 17px
+        border-radius 50%
+        position relative
+        margin-right 25px
+
+        @media (min-width 992px)
+            display block
+            margin-bottom 23px
+            margin-left auto
+            margin-right auto
+
+        &:after
+            content ''
+            height 125px
+            width 4px
+            position absolute
+            top 100%
+            left 50%
+            transform translateX(-50%)
+
+            @media (min-width 460px)
+                height 150px
+
+            @media (min-width 992px)
+                height 4px
+                width 145px
+                left 100%
+                top 50%
+                transform translateY(-50%)
+
+    &__icon-wrap
+        {ibm}
+        background-image inline('working-icon-bg.png')
+        background-size contain
+        background-repeat no-repeat
+        position relative
+        width (144/1.5)px
+        height (167/1.5)px
+
+        @media (min-width 460px)
+            width (144/1.2)px
+            height (167/1.2)px
+
+        @media (min-width 992px)
+            display block
+            width 144px
+            height 167px
+
+    &__icon
+        position absolute
+        width 100%
+        height 100%
+        background-repeat no-repeat
+        background-position center
+        background-size 55%

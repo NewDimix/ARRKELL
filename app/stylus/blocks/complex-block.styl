@@ -1,0 +1,65 @@
+.complex-block
+    position relative
+
+    &__content
+        background-color #d4d24b
+        padding 15px
+
+        @media (min-width 768px)
+            margin-right 50%
+
+    &__title
+        font-size 25px
+        margin-bottom 15px
+        text-transform uppercase
+        font-weight 700
+
+        h3
+            margin-top 0
+            margin-bottom 0
+
+    &__text
+        font-size 12px
+
+    &__price-wrap
+        text-align center
+        padding-top 15px
+        padding-bottom 15px
+
+    &__price
+        {ibt}
+        border-top 2px solid black
+        border-bottom 2px solid black
+        padding-top 14px
+        padding-bottom 14px
+        font-size 31px
+
+    &__link
+        text-align right
+        margin-top 20px
+
+        a
+            {ibt}
+            padding 8px 10px
+            background-color #3f3f17
+            color white
+            font-size 13px
+            text-decoration none
+
+    &__img
+        height 200px
+        background-color #d4d24b
+        background-image url(../img/complex-img.png)
+        background-size cover
+        background-repeat no-repeat
+        background-position center
+
+        @media (min-width 480px)
+            height 300px
+
+        @media (min-width 768px)
+            position absolute
+            height 100%
+            right 0
+            width 50%
+            top 0

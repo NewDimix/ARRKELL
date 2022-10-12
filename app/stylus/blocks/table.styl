@@ -1,0 +1,42 @@
+.table
+    font-size-func(14)
+    width 100%
+    border-collapse collapse
+    table-layout fixed
+
+    @media (min-width 768px)
+        font-size-func(16)
+
+    &_la-auto
+        table-layout auto
+
+    &__text
+        &_green
+            color $green-color
+
+    caption
+        hyphens()
+        font-weight 700
+        font-size-func(14)
+        text-align left
+        margin-bottom 12px
+        max-width 350px
+
+        @media (min-width 768px)
+            font-size-func(16)
+
+    thead
+        color #9ea9b1
+
+    tbody
+        tr
+            &:nth-child(2n-1)
+                background-color #f8f9fd
+
+    td
+        hyphens()
+        border 1px solid $grey-light-color
+        padding 12px 7px
+
+        @media (min-width 768px)
+            padding 12px 14px

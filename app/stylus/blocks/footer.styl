@@ -1,0 +1,179 @@
+.footer
+    background-image url('../img/footer-bg.jpg')
+    background-position center
+    background-size cover
+    background-repeat no-repeat
+    padding-top 20px
+    padding-bottom 15px
+    text-align right
+
+    @media (min-width 480px)
+        padding-top 30px
+        padding-bottom 25px
+
+    @media (min-width 768px)
+        padding-top 50px
+        padding-bottom 35px
+
+    @media (min-width 840px)
+        padding-top 70px
+        padding-bottom 45px
+
+    .container
+        position relative
+
+    &__logo
+        display block
+        text-align center
+        margin-bottom 30px
+
+        @media (min-width 840px)
+            position absolute
+            left 10px
+            top 50%
+            transform translateY(-50%)
+            margin-bottom 0
+
+    &__content
+        display block
+
+        @media (min-width 840px)
+            {ibm}
+
+    &__menu
+        margin-bottom 20px
+
+        @media (min-width 480px)
+            margin-bottom 28px
+
+        @media (min-width 768px)
+            margin-bottom 36px
+
+        @media (min-width 840px)
+            margin-bottom 44px
+
+        ul
+            padding-left 0
+            list-style none
+            text-transform uppercase
+            font-size 15px
+            margin-top 0
+            margin-bottom 0
+            text-align center
+
+            @media (min-width 480px)
+                font-size 16px
+
+            @media (min-width 840px)
+                font-size 17px
+
+        li
+            {ibt}
+
+            &:not(:last-child)
+                @media (min-width 840px)
+                    margin-right 50px
+
+        a
+            {ibt}
+            color white
+            padding-top 5px
+            padding-bottom 5px
+            padding-left 11px
+            padding-right 11px
+            opacity .6
+            transition all .15s ease
+
+            @media (min-width 480px)
+                padding-left 13px
+                padding-right 13px
+
+            @media (min-width 768px)
+                padding-left 15px
+                padding-right 15px
+
+            @media (min-width 840px)
+                padding-left 0
+                padding-right 0
+
+            &:hover, &:focus
+                opacity 1
+                outline none
+
+    &__row
+        position relative
+        font-size 0
+
+    &__presentation
+        font-size 14px
+        text-align center
+        margin-bottom 20px
+
+        @media (min-width 480px)
+            font-size 16px
+            position absolute
+            left 0
+            top 50%
+            transform translateY(-50%)
+            width 33%
+            text-align left
+            margin-bottom 0
+
+        @media (min-width 768px)
+            font-size 18px
+
+        @media (min-width 840px)
+            font-size 20px
+
+        a
+            color white
+            position relative
+            padding-left 47px
+            opacity .6
+            transition all .15s ease
+
+            &:before
+                content ''
+                position absolute
+                left 0
+                top 50%
+                transform translateY(-50%)
+                width 30px
+                height 40px
+                background-image inline('pdf-icon.png')
+
+            &:hover, &:focus
+                opacity 1
+                outline none
+
+    &__tel, &__email
+        color white
+        font-weight 700
+        font-size 14px
+        text-align center
+
+        @media (min-width 480px)
+            font-size 16px
+            {ibt}
+            width 50%
+            text-align right
+
+        @media (min-width 768px)
+            font-size 18px
+
+        @media (min-width 840px)
+            font-size 20px
+
+    &__tel
+        display block
+
+        @media (min-width 480px)
+            text-align left
+
+    &__email
+        a
+            color white
+            transition all .15s ease
+
+            &:hover, &:focus
+                color #ed7400

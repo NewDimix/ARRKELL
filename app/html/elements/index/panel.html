@@ -1,0 +1,146 @@
+<div class="panel panel_light">
+    <button class="panel__language js-language-btn" tabindex="6">
+        <div class="panel__language-btn">
+            <p>ENG</p>
+        </div>
+
+        <ul class="panel__menu js-language-menu">
+            <li><a href="#">RUS</a></li>
+            <li><a href="#">ENG</a></li>
+        </ul>
+    </button>
+
+    <button class="panel__login" title="Авторизация" data-remodal-target="login" tabindex="9">Login</button><br>
+    <button class="panel__sign-up" title="Регистрация" data-remodal-target="registration" tabindex="10">Зарегистрироваться</button>
+
+    <div class="remodal panel__modal-login modal-login js-modal-login" data-remodal-id="login">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="modal-login__form form js-login-form" action="#" method="post">
+            <div class="form__row">
+                <label>
+                    <p>Email:</p>
+                    <input class="required" type="email" name="email">
+                </label>
+            </div>
+
+            <div class="form__row">
+                <label>
+                    <p>Password: <span class="form__text">(<a href="#" class="form__row_reg-link" data-remodal-target="forgot">Забыли пароль?</a>)</span></p>
+                    <input class="required" type="password" name="password">
+                </label>
+            </div>
+
+            <div class="form__row form__row_check">
+                <label>
+                    <input type="checkbox" name="remember">
+                    <span>Запомнить меня</span>
+                </label>
+            </div>
+
+            <div class="form__row form__row_reg">
+                <p>Не пришло подтверждение? <b><a href="#" class="form__row_reg-link" data-remodal-target="registration">Отправить повторно</a></b>.</p>
+            </div>
+
+            <div class="form__row form__row_reg">
+                <p>Если у вас нет учетной записи, то вам необходимо <b><a href="#" class="form__row_reg-link" data-remodal-target="registration">зарегистрироваться</a></b>.</p>
+            </div>
+
+            <div class="form__row form__row_btn">
+                <input class="form__btn btn btn_turquoise" type="submit" value="Login" name="submit">
+            </div>
+        </form>
+    </div>
+
+    <div class="remodal panel__modal-forgot modal-forgot js-modal-forgot" data-remodal-id="forgot">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="modal-register__form form js-forgot-form" action="#" method="post">
+            <div class="form__row">
+                <label>
+                    <p>Email:</p>
+                    <input class="required" type="email" name="email">
+                </label>
+            </div>
+
+            <div class="form__row form__row_btn">
+                <input class="form__btn btn btn_turquoise" type="submit" value="Восстановить" name="submit">
+            </div>
+        </form>
+    </div>
+
+    <div class="remodal panel__modal-register modal-register js-modal-register" data-remodal-id="registration">
+        <button data-remodal-action="close" class="remodal-close"></button>
+
+        <form class="modal-register__form form js-registration-form" action="#" method="post">
+           <div class="form__row">
+                <label>
+                    <p>Nickname:</p>
+                    <input class="required" type="text" name="nickname" maxlength="20">
+                </label>
+            </div>
+
+            <div class="form__row">
+                <label>
+                    <p>Email:</p>
+                    <input class="required" type="email" name="email">
+                </label>
+            </div>
+
+            <div class="form__row">
+                <label>
+                    <p>Пароль:</p>
+                    <input class="required" id="password" type="password" name="password">
+                </label>
+            </div>
+
+            <div class="form__row">
+                <label>
+                    <p>Повторите пароль:</p>
+                    <input class="required" type="password" name="repeatpassword">
+                </label>
+            </div>
+
+            <div class="form__row form__row_check">
+                <label>
+                    <input class="required" type="checkbox" name="agree">
+                    <span>Я соглашаюсь на обратку персональных данных</span>
+                </label>
+            </div>
+
+            <div class="form__row">
+                <label>
+                    <p>Или с помощью соц. сетей:</p>
+
+                    <ul class="form__social social social_circle">
+                        <li><a class="social__item social__item_linkedin" href="#" title="Linkedin"></a></li>
+                        <li><a class="social__item social__item_facebook" href="#" title="Facebook"></a></li>
+                        <li><a class="social__item social__item_vkontakte" href="#" title="Vkontakte"></a></li>
+                        <li><a class="social__item social__item_google" href="#" title="Google+"></a></li>
+                    </ul>
+                </label>
+            </div>
+
+            <div class="form__row form__row_btn">
+                <input class="form__btn btn btn_turquoise" type="submit" name="submit" value="Registration">
+            </div>
+        </form>
+    </div>
+
+<!--
+    <button class="panel__user js-user-btn" tabindex="7">
+        <div class="panel__nickname">
+            <p>qweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqwe</p>
+        </div>
+
+        <div class="panel__avatar object-fit-container cover">
+            <img src="img/team-photo2.jpg" alt="Avatar">
+        </div>
+
+        <ul class="panel__menu js-user-menu">
+            <li><a href="account.html">Личный кабинет</a></li>
+            <li><a href="index.html">Выход</a></li>
+        </ul>
+    </button>
+-->
+</div>

@@ -1,0 +1,90 @@
+.grid
+    font-size 0
+    text-align center
+
+    &_3
+        .grid__item
+            {ibt}
+            width 100%
+            margin-bottom 22px
+
+            @media (min-width 768px)
+                width 31%
+                margin-bottom 34px
+                margin-right 3.5%
+
+            &:nth-child(3n)
+                margin-right 0
+
+            &:nth-last-child(-n+3)
+                @media (min-width 768px)
+                    margin-bottom 0
+
+            &:last-child
+                margin-bottom 0
+                margin-right 0
+
+    &_4
+        .grid__item
+            {ibt}
+            margin-bottom 22px
+
+            @media (min-width 550px)
+                width 50%
+                margin-bottom 26px
+
+            @media (min-width 768px)
+                width 33.3333%
+                margin-bottom 30px
+
+            @media (min-width 1050px)
+                width 25%
+                margin-bottom 34px
+
+            &:nth-last-child(-n+2)
+                @media (min-width 550px)
+                    margin-bottom 0
+
+            &:nth-last-child(-n+3)
+                @media (min-width 768px)
+                    margin-bottom 0
+
+            &:nth-last-child(-n+4)
+                @media (min-width 1050px)
+                    margin-bottom 0
+
+            &:last-child
+                margin-bottom 0
+
+    &_5
+        .grid__item
+            {ibt}
+            margin-bottom 22px
+            width 100%
+
+            @media (min-width 550px)
+                width 50%
+                margin-bottom 26px
+
+            @media (min-width 768px)
+                width 33.3333%
+                margin-bottom 30px
+
+            @media (min-width 1050px)
+                width 20%
+                margin-bottom 34px
+
+            &:nth-last-child(-n+2)
+                @media (min-width 550px)
+                    margin-bottom 0
+
+            &:nth-last-child(-n+3)
+                @media (min-width 768px)
+                    margin-bottom 0
+
+            &:nth-last-child(-n+4)
+                @media (min-width 1050px)
+                    margin-bottom 0
+
+            &:last-child
+                margin-bottom 0

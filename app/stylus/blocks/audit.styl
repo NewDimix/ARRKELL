@@ -1,0 +1,146 @@
+.audit
+    background-color transparent
+
+    &__title
+        margin-bottom 16px
+        color #ff8c04
+
+        @media (min-width 480px)
+            margin-bottom 16px
+
+        @media (min-width 820px)
+            margin-bottom 16px
+
+        @media (min-width 992px)
+            margin-bottom 16px
+
+    &__subtitle
+        color white
+        text-align center
+        font-size 16px
+        text-transform uppercase
+        margin-bottom 33px
+
+        @media (min-width 480px)
+            margin-bottom 43px
+
+        @media (min-width 768px)
+            margin-bottom 53px
+
+        @media (min-width 992px)
+            margin-bottom 63px
+
+        @media (min-width 992px)
+            margin-bottom 73px
+
+    &__form
+        font-size 0
+        text-align center
+        margin-bottom 35px
+
+        @media (min-width 480px)
+            margin-bottom 45px
+
+        @media (min-width 768px)
+            margin-bottom 55px
+
+        @media (min-width 992px)
+            margin-bottom 65px
+
+        @media (min-width 992px)
+            margin-bottom 75px
+
+    &__form-row
+        display block
+        width 100%
+        margin-bottom 15px
+
+        @media (min-width 550px)
+            {ibt}
+            width 40%
+            padding-left .5%
+            padding-right .5%
+            margin-bottom 20px
+
+        @media (min-width 992px)
+            width 25%
+            margin-bottom 0
+
+    input
+        display block
+        font-size 16px
+        border none
+        text-align center
+        padding-left 15px
+        padding-right 15px
+        box-shadow 3px 3px 8px 0 rgba(0, 0, 0, 0.3)
+        height 45px
+        width 100%
+        margin-left auto
+        margin-right auto
+        max-width 300px
+        transition all .1s ease
+        background-color #cccac8
+
+        @media (min-width 520px)
+            {ibm}
+            height 50px
+
+        @media (min-width 768px)
+            height 55px
+
+        @media (min-width 992px)
+            height 60px
+
+        &:focus
+            outline none
+            box-shadow 0 0 0 2px #ff8c04
+
+        &:last-child
+            margin-bottom 0
+
+        &::-webkit-input-placeholder
+            color black
+        &::-moz-placeholder
+            color black
+        &:-moz-placeholder
+            color black
+        &:-ms-input-placeholder
+            color black
+
+    input[type=submit]
+        background-color #ff8c04
+        font-size 29px
+        color white
+        font-family Calibri, arial, verdana, sans-serif
+        font-weight 700
+        cursor pointer
+        min-width 230px
+        text-transform uppercase
+
+        @media (min-width 768px)
+            min-width 0
+
+        &:hover
+            background-color #ff8c04
+
+        &:focus
+            outline none
+            box-shadow 0 0 0 2px white
+
+        &:active
+            transform scale(.96)
+
+    .help-block
+        font-size 14px
+        margin-top 5px
+        color white
+        height 18px
+
+    &__footer
+        color #8b8b8b
+        text-align center
+        font-size 17px
+
+        a
+            color #8b8b8b

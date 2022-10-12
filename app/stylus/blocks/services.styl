@@ -1,0 +1,65 @@
+.services
+    background-image url('../img/services-bg.jpg')
+    background-position center
+    background-size cover
+    background-repeat no-repeat
+
+    &__text
+        font-size 16px
+        text-align center
+        max-width 810px
+        margin-left auto
+        margin-right auto
+        margin-bottom 20px
+
+    hr
+        max-width 290px
+        border none
+        background-color black
+        height 3px
+        margin-top 0
+        margin-bottom 40px
+
+    &__list
+        padding-left 0
+        list-style none
+        font-size 0
+        text-transform uppercase
+        max-width 300px
+        margin-left auto
+        margin-right auto
+
+        @media (min-width 600px)
+            max-width 700px
+
+        li
+            position relative
+            font-size 16px
+            margin-bottom 50px
+            padding-left 74px
+            padding-right 15px
+
+            @media (min-width 600px)
+                {ibm}
+                width 50%
+
+            &:before
+                content ''
+                position absolute
+                left 0
+                top 50%
+                transform translateY(-50%)
+                width 57px
+                height 57px
+                background-color #515960
+                background-image inline('services-icon.png')
+                background-repeat no-repeat
+                background-position center
+                border-radius 50%
+
+            &:nth-last-child(-n+2)
+                @media (min-width 600px)
+                    margin-bottom 0
+
+            &:last-child
+                margin-bottom 0

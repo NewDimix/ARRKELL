@@ -1,0 +1,62 @@
+.causes-item
+    text-align left
+
+    &__item
+        &:first-child
+            .causes-item__title
+                &:before
+                    background-color #ff4132
+
+                &:after
+                    width 17px
+                    height 6px
+                    left 0
+                    transform translate(-50%, -50%)
+                    background-color #fff
+
+            .causes-item__text
+                padding-bottom 40px
+                border-left 1px solid #828282
+
+        &:nth-child(2)
+            .causes-item__title
+                &:before
+                    background-color #57b856
+
+                &:after
+                    width 17px
+                    height 10px
+                    left 0
+                    border-left 4px solid white
+                    border-bottom 4px solid white
+                    transform translate(-50%, -50%) rotate(-45deg)
+
+    &__title
+        font-size 16px
+        text-transform uppercase
+        padding-top 10px
+        padding-bottom 10px
+        padding-left 28px
+        padding-right 28px
+        position relative
+
+        &:before
+            content ''
+            width 33px
+            height 33px
+            position absolute
+            border-radius 50%
+            left 0
+            top 50%
+            transform translate(-50%, -50%)
+
+        &:after
+            content ''
+            position absolute
+            top 50%
+
+    &__text
+        font-size 12px
+        padding-top 11px
+        padding-left 28px
+        padding-right 28px

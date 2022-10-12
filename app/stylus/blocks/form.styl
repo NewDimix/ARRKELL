@@ -1,0 +1,316 @@
+.form
+    &__text
+        font-weight 400
+
+    &__row
+        display block
+        text-align left
+        margin-bottom 18px
+        font-size-func(12)
+
+        p
+            margin-bottom 8px
+            font-weight 700
+            ellipsis()
+
+        input, textarea
+            width 100%
+            padding 12px
+            border 1px solid $grey-light-color
+
+            &.error
+                border-color red
+
+                &:focus
+                    outline none
+
+            &.valid
+                border-color #419641
+
+                &:focus
+                    outline none
+
+            &:focus
+                outline-color $turquoise-color
+
+            &::-webkit-input-placeholder
+                color $grey-color
+            &::-moz-placeholder
+                color $grey-color
+            &:-moz-placeholder
+                color $grey-color
+            &:-ms-input-placeholder
+                color $grey-color
+
+        &_many-items
+            font-size 0
+            margin-bottom 3px
+
+            p
+                font-size-func(12)
+
+            input
+                opacity 0
+                position absolute
+
+                & + label
+                    {ibt}
+                    font-size-func(12)
+                    cursor pointer
+                    border 1px solid $grey-light-color
+                    width 45%
+                    margin-right 10%
+                    padding 12px 0
+                    margin-bottom 15px
+                    text-align center
+                    color $grey-dark-color
+                    transition all .3s ease
+                    hyphens()
+
+                    @media (min-width 480px)
+                        width 20.5%
+                        margin-right 6%
+
+                    @media (min-width 580px)
+                        width 17.6%
+                        margin-right 3%
+
+                    &:nth-of-type(5n)
+                        @media (min-width 580px)
+                            margin-right 0
+
+                    &:nth-of-type(2n)
+                        @media (max-width 479px)
+                            margin-right 0
+
+                    &:nth-of-type(4n)
+                        @media (min-width 480px) and (max-width 579px)
+                            margin-right 0
+
+                    &:last-of-type
+                        margin-right 0
+
+                &:checked + label
+                    border 1px solid $turquoise-color
+                    outline 1px solid $turquoise-color
+                    color $dark-color
+
+                &:focus + label
+                    outline 1px solid $turquoise-color
+
+                &:hover + label
+                    outline 1px solid $turquoise-color
+
+        &_two-items
+            font-size 0
+
+            label
+                display block
+                font-size-func(12)
+                margin-bottom 10px
+
+                @media (min-width 480px)
+                    {ibb}
+                    width 55.8%
+                    margin-right 6%
+                    margin-bottom 0
+
+                @media (min-width 580px)
+                    width 58.8%
+                    margin-right 3%
+
+            .jq-selectbox
+                border 1px solid $grey-light-color
+                padding 3px 10px
+                height 39px
+                transition all .1s ease
+                display block
+                font-size-func(12)
+
+                @media (min-width 480px)
+                    {ibb}
+                    width 38.2%
+
+                &:hover
+                    background-color white
+
+                    .jq-selectbox__select
+                        color $dark-color
+
+                    .jq-selectbox__trigger-arrow
+                        border-top-color $dark-color
+
+                &.opened
+                    background-color white
+                    border-bottom-left-radius 0
+                    border-bottom-right-radius 0
+
+                    .jq-selectbox__select
+                        color $dark-color
+
+                    .jq-selectbox__trigger-arrow
+                        border-top-color $dark-color
+
+                &.focused.opened
+                    outline none
+
+                &.focused
+                    outline 1px solid $turquoise-color
+
+                &__select
+                    background transparent
+                    color $dark-color
+                    text-shadow none
+                    box-shadow none
+                    border none
+                    font-weight 700
+                    text-transform uppercase
+                    font-size-func(14)
+                    padding-left 0
+                    padding-right 20px
+
+                &__select-text
+                    text-transform none
+                    font-weight 400
+                    font-size-func(12)
+
+                &.focused
+                    .jq-selectbox__select
+                        border none
+
+                &__trigger
+                    border-left none
+                    width 20px
+
+                &__trigger-arrow
+                    border-top-color $dark-color
+                    border-width 4px
+                    top 50%
+                    left none
+                    right 0
+                    transform translate(-4px, -2px)
+
+                &__dropdown
+                    top 37px !important
+                    margin 0
+                    left 0
+                    box-shadow none
+                    border none
+                    font-family GothamPro, arial, verdana, sans-serif
+                    font-size-func(12)
+
+                ul
+                    border 1px solid $grey-light-color
+
+                li
+                    padding 7px 0
+                    text-align center
+                    transition all .1s ease
+
+                    &:hover
+                        background-color rgba(0, 208, 142, 0.5)
+
+                    &.selected
+                        background-color $turquoise-color
+
+                        &:hover
+                            background-color rgba(0, 208, 142, 0.5)
+
+        &_half-items
+            font-size 0
+
+            label
+                display block
+                font-size-func(12)
+
+                @media (min-width 992px)
+                    {ibt}
+                    width 49%
+
+                &:first-child
+                    margin-bottom 20px
+
+                    @media (min-width 992px)
+                        margin-right 2%
+                        margin-bottom 0
+
+        &_check
+            margin-bottom 25px
+
+            input
+                {ibm}
+                width auto
+                opacity 0
+                position absolute
+
+                & + span
+                    display block
+                    position relative
+                    padding 5px
+                    margin-left 30px
+                    hyphens()
+                    color $grey-dark-color
+                    font-style italic
+
+
+                    &:hover
+                        cursor pointer
+
+                    &:before
+                        content ''
+                        width 17px
+                        height 17px
+                        border 4px solid white
+                        outline 1px solid $grey-light-color
+                        background-color white
+                        position absolute
+                        left -24px
+                        top 50%
+                        transform translateY(-50%)
+                        transition all .15s ease
+
+                &:checked + span
+                    &:before
+                        background-color $dark-color
+
+                &:focus + span
+                    &:before
+                        outline-color $turquoise-color
+
+        &_btn
+            margin-bottom 0
+
+            input
+                {ibm}
+                color white
+                width auto
+                max-width 100%
+                min-width 120px
+                padding-top 20px
+                padding-bottom 20px
+                padding 18px
+
+        &_reg
+            p
+                hyphens()
+                font-weight 400
+                white-space normal
+
+        &_reg-link
+            color $turquoise-color
+            text-decoration none
+
+            &:hover, &:focus
+                outline none
+                text-decoration underline
+
+    label.error
+        display block
+        margin-top 10px
+        color red
+
+    .rc-anchor-light.rc-anchor-normal
+        transform scale(.6) translateX(-100px)
+
+        @media (min-width 480px)
+            transform none

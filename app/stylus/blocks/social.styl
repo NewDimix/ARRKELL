@@ -1,0 +1,96 @@
+.social
+    padding-left 0
+    list-style none
+    font-size 0
+    margin-top 0
+    margin-bottom 0
+
+    li
+        {ibm}
+        position relative
+        transition all .1s ease
+        border-bottom 1px solid transparent
+        background-color black
+        cursor pointer
+        opacity .65
+
+        @media (min-width 572px)
+            border-bottom none
+            border-radius 50%
+
+        &:hover
+            border-bottom 1px solid white
+            opacity 1
+
+            @media (min-width 572px)
+                border-bottom none
+
+
+            .social__item
+                &_facebook
+                        background-image inline('facebook.svg')
+
+                &_instagram
+                        background-image inline('instagram.svg')
+
+                &_vkontakte
+                        background-image inline('vk.svg')
+
+                &_youtube
+                        background-image inline('youtube.svg')
+
+                &_twitter
+                        background-image inline('twitter.svg')
+
+                &_telegram
+                        background-image inline('telegram.svg')
+
+        &:not(:last-child)
+            margin-right 8px
+
+    &__item
+        {ibm}
+        width 25px
+        height 25px
+        background-position center
+        background-size 60%
+        background-repeat no-repeat
+        transition all .1s ease
+        border-radius 50%
+
+        &:focus
+            outline none
+            box-shadow inset 0 0 0 1px white
+
+        &_facebook
+            background-image inline('facebook.svg')
+
+        &_instagram
+            background-image inline('instagram.svg')
+
+        &_vkontakte
+            background-image inline('vk.svg')
+
+        &_youtube
+            background-image inline('youtube.svg')
+
+        &_twitter
+            background-image inline('twitter.svg')
+
+        &_telegram
+            background-image inline('telegram.svg')
+
+    &_no-border
+        li
+            border-bottom none
+            border-radius 50%
+
+            &:hover
+                border-bottom none
+
+        .social__item
+            &:focus
+                box-shadow inset 0 0 0 1px white, 0 0 0 2px black
+
+
+

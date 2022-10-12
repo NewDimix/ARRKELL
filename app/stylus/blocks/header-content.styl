@@ -1,0 +1,136 @@
+.header-content
+    {ibt}
+    color white
+    text-transform uppercase
+    text-align left
+    position relative
+    padding-top 15px
+
+    @media (min-width 600px)
+        padding-right 190px
+        padding-top 80px
+        padding-bottom 80px
+        margin-right 7%
+
+    &:after
+        @media (min-width 600px)
+            content ''
+            width 315px
+            height 482px
+            background-image inline('header-content-el.png')
+            position absolute
+            right 0
+            top 50%
+            transform translateY(-50%)
+
+    &__title
+        font-size (44/1.2)px
+        margin-top 0
+        margin-bottom 18px
+        line-height 1
+        color #ffa40f
+
+        @media (min-width 480px)
+            font-size 44px
+
+    &__subtitle
+        font-size (34/1.2)px
+        color white
+
+        @media (min-width 480px)
+            font-size 34px
+
+    &__bottom-block
+        {ibt}
+
+    &__text
+        color #ffa40f
+        font-size 23px
+        margin-bottom 18px
+        width 300px
+
+    &__link
+        display block
+        color white
+        text-decoration none
+        text-align center
+        font-size 28px
+        border 3px solid white
+        transition background-color .3s ease
+        line-height 3
+
+        &:hover, &:focus
+            background-color rgba(255, 255, 255, 0.15)
+
+    hr
+        height 3px
+        background-color white
+        margin-top 0
+        margin-bottom 18px
+
+    &__list
+        display none
+
+        @media (min-width 1000px)
+            display block
+            position absolute
+            bottom 75px
+            left -100px
+            transform translateX(-100%)
+
+        ul
+            padding-left 0
+            list-style none
+            font-size 21px
+            text-align center
+            color #ffa40f
+            padding 10px 50px
+            margin-top 0
+            margin-bottom 0
+
+    &__border
+        width 3px
+        height 22px
+        background-color #ffa40f
+        position absolute
+
+        &:after
+            content ''
+            width 26px
+            height 3px
+            background-color inherit
+            position absolute
+
+        &:first-child
+            left 0
+            top 0
+
+            &:after
+                left 100%
+                top 0
+
+        &:nth-child(2)
+            right 0
+            top 0
+
+            &:after
+                right 100%
+                top 0
+
+        &:nth-child(3)
+            left 0
+            bottom 0
+
+            &:after
+                left 100%
+                bottom 0
+
+        &:nth-child(4)
+            right 0
+            bottom 0
+
+            &:after
+                right 100%
+                bottom 0
+
+

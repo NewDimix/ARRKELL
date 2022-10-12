@@ -1,0 +1,44 @@
+.working3
+    &__tabs
+        padding-left 0
+        list-style none
+        font-size 0
+        margin-bottom 50px
+        margin-top 0
+
+        li
+            font-size 17px
+            padding-bottom 13px
+            border-bottom 5px solid #e1e1e1
+            text-transform uppercase
+            transition all .2s ease
+            cursor pointer
+
+            @media (min-width 480px)
+                {ibb}
+                padding-bottom 23px
+                width 50%
+
+            @media (min-width 768px)
+                width 25%
+                padding-bottom 33px
+                padding-right 20px
+
+            @media (min-width 992px)
+                padding-bottom 43px
+
+            &:not(:last-child)
+                margin-bottom 20px
+
+                @media (min-width 480px)
+                    margin-bottom 0
+
+            &:nth-child(-n+2)
+                @media (min-width 480px)
+                    margin-bottom 30px
+
+                @media (min-width 768px)
+                    margin-bottom 0
+
+            &.active
+                border-color #ff8c04

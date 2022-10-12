@@ -1,0 +1,118 @@
+.special
+    &__timer
+        text-align center
+        margin-bottom 50px
+
+    &__timer-item
+        {ibt}
+        border 15px solid #e56305
+        border-radius 50%
+        width 140px
+        height 140px
+        margin-left 30px
+        margin-right 30px
+        color #2b2829
+        padding-top 20px
+
+    &__count
+        font-size 70px
+        line-height 50px
+
+    &__timer-text
+        font-size 20px
+
+    &__message
+        font-size 18px
+        text-align center
+        padding 1em
+        text-transform uppercase
+        font-weight 700
+        max-width 745px
+        margin-left auto
+        margin-right auto
+        position relative
+
+        @media (min-width 480px)
+            font-size 20px
+
+        @media (min-width 768px)
+            font-size 25px
+
+        @media (min-width 1050px)
+            font-size 29px
+
+    &__message-text
+        margin-bottom 1em
+
+        span
+            color #d90000
+
+    &__message-price
+        color #4e8339
+        font-size 32px
+
+        @media (min-width 480px)
+            font-size 42px
+
+        @media (min-width 768px)
+            font-size 52px
+
+        @media (min-width 1050px)
+            font-size 62px
+
+    &__border
+        width 7px
+        height 31px
+        background-color #57b856
+        position absolute
+
+        &:after
+            content ''
+            width 63px
+            height 7px
+            background-color inherit
+            position absolute
+
+        &:first-child
+            left 0
+            top 0
+
+            &:after
+                left 100%
+                top 0
+
+        &:nth-child(2)
+            right 0
+            top 0
+
+            &:after
+                right 100%
+                top 0
+
+        &:nth-child(3)
+            left 0
+            bottom 0
+
+            &:after
+                left 100%
+                bottom 0
+
+        &:nth-child(4)
+            right 0
+            bottom 0
+
+            &:after
+                right 100%
+                bottom 0
+
+.time_circles > div > h4
+    font-family Calibri, arial, verdana, sans-serif
+    color #404040
+
+/**
+ *    Time numbers, ie: 12
+ **/
+.time_circles > div > span
+    font-family Calibri, arial, verdana, sans-serif
+    color #404040
+    font-weight 300

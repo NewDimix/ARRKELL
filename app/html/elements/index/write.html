@@ -1,0 +1,85 @@
+<div class="write section" id="contacts">
+    <div class="container">
+        <div class="write__top-content">
+            <div class="section__title">
+                <h2>Начните работать с нами уже сегодня</h2>
+            </div>
+
+            <div class="write__subtitle">
+                <span>Будьте уверены в достижении ваши целей</span>
+            </div>
+
+<!--
+            <form class="write__form">
+                <h3>Напишите нам!</h3>
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="E-mail">
+                <textarea cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+                <input type="submit" value="Отправить">
+            </form>
+-->
+
+            <form id="w1" class="write__form" action="/" method="post">
+                <input type="hidden" name="_csrf" value="k6mcm3wNmb5ZD6bzBxudiqaBDLB4AQdPH7-tr0y2Ix-gmNnrNDrLyRN9lJ1TVPTN47Q88RJUYQF1zuTCCdURUA==">
+
+                <h3>Напишите нам!</h3>
+
+                <div class="write__form-row form-group field-feedback-name required has-error">
+                    <div class="write__input write__input_user">
+                        <input type="text" id="feedback-name" class="form-control" name="Feedback[name]" placeholder="Имя" aria-required="true" aria-invalid="true">
+                        <div class="write__input-icon"></div>
+                    </div>
+                    <div class="help-block">Необходимо заполнить «Имя».</div>
+                </div>
+
+                <div class="write__form-row form-group field-feedback-email required">
+                    <div class="write__input write__input_email">
+                        <input type="email" id="feedback-email" class="form-control" name="Feedback[email]" placeholder="E-mail" aria-required="true">
+                        <div class="write__input-icon"></div>
+                    </div>
+                    <div class="help-block">Необходимо заполнить «Email».</div>
+                </div>
+
+                <div class="write__form-row form-group field-feedback-text required">
+                    <textarea id="feedback-text" class="form-control" name="Feedback[text]" rows="10" cols="30" placeholder="Текст сообщения" aria-required="true"></textarea>
+                    <div class="help-block">Необходимо заполнить «Текст».</div>
+                </div>
+
+                <div class="write__form-row">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+        </div>
+
+        <div class="write__contacts">
+            <div class="write__caption">
+                <span>Телефон:</span>
+            </div>
+
+            <div class="write__text">
+                <span>+7 (985) 069-44-27</span>
+            </div>
+
+            <div class="write__caption">
+                <span>E-mail:</span>
+            </div>
+
+            <div class="write__text">
+                <a href="mailto:official@arkell-digital.ru">official@arkell-digital.ru</a>
+            </div>
+
+            <div class="write__caption">
+                <span>Мы в соцсетях:</span>
+            </div>
+
+            <ul class="write__social social social_no-border">
+                <li><a class="social__item social__item_facebook" href="#" title="Facebook" target="_blank">ARKELL Facebook</a></li>
+                <li><a class="social__item social__item_telegram" href="#" title="Telegram" target="_blank">ARKELL Telegram</a></li>
+                <li><a class="social__item social__item_vkontakte" href="#" title="Vkontakte" target="_blank">ARKELL Vkontakte</a></li>
+                <li><a class="social__item social__item_instagram" href="#" title="Instagram" target="_blank">ARKELL Instagram</a></li>
+                <li><a class="social__item social__item_twitter" href="#" title="Twitter" target="_blank">ARKELL Twitter</a></li>
+                <li><a class="social__item social__item_youtube" href="#" title="Youtube" target="_blank">ARKELL Youtube</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
